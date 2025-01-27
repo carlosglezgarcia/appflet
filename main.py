@@ -112,6 +112,7 @@ def main(page: ft.Page):
         label="Teléfono",
         expand=True,
         autofill_hints=ft.AutofillHint.TELEPHONE_NUMBER,
+        input_filter=ft.NumbersOnlyInputFilter(),
     )
     # Checkbox de correo o telefono
     comun = ft.Text(value="Comunicación", width=120, text_align=ft.TextAlign.CENTER)
